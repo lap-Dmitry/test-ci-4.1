@@ -12,10 +12,22 @@
         "sourceType": "module"
     },
     "rules": {
+        "no-unused-vars": [
+            "error",
+            {
+                "vars": "all",
+                "args": "after-used",
+                "ignoreRestSiblings": false
+            }
+        ],
         "no-restricted-syntax": [
             "error",
             "LabeledStatement",
             "WithStatement"
+        ],
+        "linebreak-style": [
+            "error",
+            "windows"
         ]
     }
 }
