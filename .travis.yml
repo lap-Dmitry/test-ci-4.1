@@ -7,7 +7,7 @@
   "test_script": [
     "npm run lint && npm test"
   ],
-  "language": "ruby",
+  "language": "node_js",
   "os": [
     "linux"
   ],
