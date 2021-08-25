@@ -1,1 +1,1 @@
-https://app.travis-ci.com/lap-Dmitry/test-ci-4.1.svg?branch=master
+[![Build Status](https://app.travis-ci.com/lap-Dmitry/test-ci-4.1.svg?branch=master)](https://app.travis-ci.com/lap-Dmitry/test-ci-4.1)
