@@ -9,11 +9,8 @@ cache:
   - node_modules
 
 script:
-  npm run build
-
-test_script:
-  npm run lint && npm test
-
+  npm run build && npm run lint && npm test
+  
 deploy:
   provider: pages
   github-token: $travis
