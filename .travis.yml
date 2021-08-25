@@ -8,6 +8,10 @@
     "npm run lint && npm test"
   ],
   "language": "node_js",
+  "os": [
+    "linux"
+  ],
+  "dist": "xenial",
   "stack": "node 12",
   "branches": {
     "only": [
