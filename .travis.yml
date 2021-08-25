@@ -1,29 +1,20 @@
-{
-  "image": "Ubuntu1804",
-  "build": "off",
-  "build_script": [
-    "npm run build"
-  ],
-  "test_script": [
-    "npm run lint && npm test"
-  ],
-  "language": "node_js",
-  "os": [
-    "linux"
-  ],
-  "dist": "xenial",
-  "stack": "node 12",
-  "branches": {
-    "only": [
-      "master"
-    ]
-  },
-  "cache": {
-    "directories": [
-      "node_modules"
-    ]
-  },
-  "install": [
-    "npm install"
-  ]
-}
+language: node_js
+node_js:
+  - "stable"
+notifications:
+  email: false
+
+cache:
+  directories:
+  - node_modules
+
+script:
+  npm run build
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github-token: $travis
+  local_dir: build
+  on:
+    branch: master
