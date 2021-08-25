@@ -11,9 +11,11 @@ cache:
 script:
   npm run build
 
+test_script:
+  - npm run lint && npm test
+
 deploy:
   provider: pages
   github-token: $travis
-  local_dir: build
   on:
     branch: master
